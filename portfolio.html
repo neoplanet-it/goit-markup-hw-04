@@ -34,10 +34,20 @@
 
         <ul class="auth-nav list">
           <li class="item">
-            <a class="contact link-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact link-nav icon-contact" href="mailto:info@devstudio.com">
+              <svg class="icon-cont" width="20px" height="16">
+                <use href="./images/icons.svg#icon-contact-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="item">
-            <a class="contact link-nav" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact link-nav icon-contact" href="tel:+380961111111">
+              <svg class="icon-cont" width="20px" height="16">
+                <use href="./images/icons.svg#icon-contact-telephone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -62,14 +72,14 @@
           <!--*ПРИМЕРЫ РАБОТ*-->
 
           <ul class="list project-list">
-            <li class="item ">
+            <li class="item border-prlist">
               <img src="./images/portfolio1.jpg" alt="фото технокряк веб-сайт" width="368" />
               <div class="style-name border-item">
                 <h3 class="project-name">Технокряк</h3>
                 <p class="project">Веб-сайт</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img
                 src="./images/portfolio2.jpg"
                 alt="фото постер new orlean vs golden star дизайн"
@@ -80,28 +90,28 @@
                 <p class="project">Дизайн</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img src="./images/portfolio3.jpg" alt="фото ресторан seafood " width="368" />
               <div class="style-name border-item">
                 <h3 class="project-name">Ресторан Seafood</h3>
                 <p class="project">Додаток</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img src="./images/portfolio4.jpg" alt="фото проєкт prime маркетинг" width="368" />
               <div class="style-name border-item">
                 <h3 class="project-name">Проєкт Prime</h3>
                 <p class="project">Маркетинг</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img src="./images/portfolio5.jpg" alt="фото проєкт boxes додаток" width="368" />
               <div class="style-name border-item">
                 <h3 class="project-name">Проєкт Boxes</h3>
                 <p class="project">Додаток</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img
                 src="./images/portfolio6.jpg"
                 alt="фото inspiration has no borders веб-сайт"
@@ -112,7 +122,7 @@
                 <p class="project">Веб-сайт</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img
                 src="./images/portfolio7.jpg"
                 alt="фото видання limited edition дизайн"
@@ -123,14 +133,14 @@
                 <p class="project">Дизайн</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img src="./images/portfolio8.jpg" alt="фото проєкт lab маркетинг" width="368" />
               <div class="style-name border-item">
                 <h3 class="project-name">Проєкт LAB</h3>
                 <p class="project">Маркетинг</p>
               </div>
             </li>
-            <li class="item">
+            <li class="item border-prlist">
               <img src="./images/portfolio9.jpg" alt="фото growing business додаток" width="368" />
               <div class="style-name border-item">
                 <h3 class="project-name">Growing Business</h3>
@@ -145,27 +155,63 @@
     <!--*FOOTER*-->
 
     <footer class="main-footer">
-      <div class="container logo-footer">
-        <a class="logo" href="./index.html">Web<span class="studio-logo2">Studio</span></a>
-        <address>
-          <ul class="list">
-            <li class="contact-link">
-              <a
-                class="address contact2"
-                href="https://goo.gl/maps/FWyEGyq7byPqRoUa9"
-                target="_blank"
-                rel="noreferrer noopener"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container footer-support">
+        <div class="logo-footer">
+          <a class="logo" href="./index.html">Web<span class="studio-logo2">Studio</span></a>
+          <address>
+            <ul class="list contact-list">
+              <li class="contact-link">
+                <a
+                  class="address contact2"
+                  href="https://goo.gl/maps/FWyEGyq7byPqRoUa9"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="contact-link">
+                <a class="contact2" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="contact-link">
+                <a class="contact2" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="support-site">
+          <span class="title-support">приєднуйтесь</span>
+          <ul class="team-icon-footer">
+            <li>
+              <a class="icon-team2" href="">
+                <svg class="icon-color2" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-social-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="contact-link">
-              <a class="contact2" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li>
+              <a class="icon-team2" href="">
+                <svg class="icon-color2" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-social-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="contact-link">
-              <a class="contact2" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li>
+              <a class="icon-team2" href="">
+                <svg class="icon-color2" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="icon-team2" href="">
+                <svg class="icon-color2" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-social-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
