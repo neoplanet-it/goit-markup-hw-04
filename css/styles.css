@@ -143,9 +143,17 @@ body {
   margin-left: 50px;
 }
 
-.icon-contact:hover,
-.icon-contqct:focus {
-  color: var(--link-color);
+.icon-contact:hover .icon-cont,
+.icon-contact:focus .icon-cont {
+  fill: var(--link-color);
+}
+
+.icon-contact {
+  color: var(--grey-color);
+}
+
+.icon-cont {
+  fill: currentColor;
 }
 
 /**MAIN BANER*/
@@ -235,10 +243,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--button-color);
-}
-
-.icon-color {
-  color: var(--white-color);
 }
 
 .icon-team .icon-color {
@@ -369,7 +373,8 @@ img {
   background-position: center;
 }
 
-.icon-team:hover {
+.icon-team:hover,
+.icon-team:focus {
   color: var(--white-color);
 }
 
@@ -393,11 +398,12 @@ svg {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
 }
 
 .icon-client {
-  margin-right: 30px;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
@@ -406,22 +412,38 @@ svg {
   border-radius: 4px;
 }
 
+.icon-main-cl:hover .icon-client,
+.icon-main-cl:focus .icon-client {
+  border-color: var(--link-color);
+}
+
+.icon-main-cl:hover .icon-client,
+.icon-main-cl:focus .icon-client {
+  color: var(--link-color);
+}
+
+.icon-main-cl {
+  color: var(--border-cleint);
+}
+
+.icon-client {
+  fill: currentColor;
+}
+
 /**FOOTER*/
 
 .main-footer {
   background: var(--background-color);
 }
 
-address,
-.support-site {
+.footer-support {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
 .support-site {
-  margin: 0;
-  padding: 0;
-  margin-left: 70px;
-  margin-bottom: 72px;
+  padding-left: 70px;
 }
 
 .title-support {
@@ -431,24 +453,46 @@ address,
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin: 0;
-  padding: 0;
+  padding-left: 70px;
+  margin-top: 12px;
 }
 
 .team-icon-footer {
-  margin: 0;
-  padding: 0;
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
-.icon-team {
+.icon-team2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 22px;
   background: var(--border-footer);
+  color: var(--white-color);
+}
+
+.icon-team2:hover,
+.icon-team2:focus {
+  color: var(--white-color);
+}
+
+.icon-color2 {
+  fill: currentColor;
+}
+
+.icon-team2:hover,
+.icon-team2:focus {
+  background-color: var(--link-color);
+  border-radius: 22px;
 }
 
 footer {
